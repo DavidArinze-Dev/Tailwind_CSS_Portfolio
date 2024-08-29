@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.textShadow {
+    text-shadow: 4px 4px 4px black;
+}
+
+.textShadowOrange {
+    text-shadow: 3px 3px 1px rgb(215, 108, 1);
+}

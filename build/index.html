@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body class="font-nunito">
+    <div class="h-[100vh] lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
+
+
+        <!-- Header Section -->
+        <header class="w-full fixed top-0 bg-black text-white z-10">
+            <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+
+                <div class="flex items-center gap-2">
+                    <img class="size-16 hover:opacity-50" src="./images/SKY_Logo.png" alt="">
+                    <span class="md:text-2xl font-bold text-orange-500 cursor-pointer">SKY DESIGNS</span>
+                </div>
+                <div>
+                    <button id="hamburger-button" class="text-3xl sm:hidden focus:outline-none">&#9776;</button>
+
+
+                    <nav class="hidden sm:block space-x-8 text-base md:text-xl text-orange-500">
+                        <a href="#" class="hover:text-white">Home</a>
+                        <a href="#about" class="hover:text-white">About</a>
+                        <a href="#project" class="hover:text-white">Projects</a>
+                        <a href="#contact" class="hover:text-white">Contact Us</a>
+                    </nav>
+                </div>
+            </section>
+
+            <section id="mobile-menu"
+                class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-2xl text-orange-500">
+                <button class="text-4xl self-center px-6 text-white">&times</button>
+                <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+                    <a href="#home" class="w-full py-6 text-center hover:text-white">Home</a>
+                    <a href="#about" class="w-full py-6 text-center hover:text-white">About</a>
+                    <a href="#project" class="w-full py-6 text-center hover:text-white">Projects</a>
+                    <a href="#contact" class="w-full py-6 text-center hover:text-white">Contact Us</a>
+                </nav>
+            </section>
+        </header>
+
+
+
+        <!-- Hero Section -->
+        <section id="home">
+            <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="./images/Chi1-BG.png"
+                alt="">
+            <!-- Circle over Hero Image -->
+            <div
+                class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-orange-500 rounded-full -z-10">
+            </div>
+            <!-- Animated Text -->
+            <div class="absolute top-1/3 left-5 text-7xl sm:left-10  md:left-1/4  lg:left-5 xl:left-48  font-bold">
+                <span id="text" class="text-black textShadowOrange"></span>
+                <br>
+                <p class="text-orange-500 textShadow">Designer</p>
+            </div>
+            <!-- Texts -->
+            <div
+                class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg shadow-orange-300 hover:shadow-orange-500 absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3">
+                <h1 class="text-4xl font-bold text-orange-500 hover:text-orange-700">Hi, I'm Nenye Sky</h1>
+                <p class="text-gray-400 hover:text-gray-600">
+                    With over 50 projects in Graphics and User Interface Design, I am confident that Sky Designs can
+                    make
+                    your design fantasies become realities. <br>
+                    We ensure only the best output gets to our clients and guarantee
+                    you superb satisfaction.
+                </p>
+                <a class="bg-orange-500 hover:bg-orange-700 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit"
+                    href="#contact">Book Me</a>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Skills -->
+    <section id="about">
+        <div class="px-10 dark:bg-black">
+            <div class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
+                <!-- left -->
+
+                <div class="rounded-full overflow-hidden ms-5">
+                    <img src="./images/Chi3.jpg" alt="">
+                </div>
+
+
+                <!-- right -->
+                <div class="my-auto flex flex-col gap-1 mx-10">
+                    <h1 class="text-orange-600 font-bold">ABOUT ME</h1>
+                    <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
+                    <h1 class="text-3xl font-medium dark:text-white">Better Experience</h1>
+                    <p class="text-gray-400">
+                        I design and create a variety of products ranging from flyers, to posters, to websites
+                        interfaces,
+                        to mobile app interfaces, and so much more. I also offering branding services such as company
+                        branding, business branding, logo design, etc.
+                    </p>
+                    <h2 class="text-gray-400 font-medium">FIGMA</h2>
+                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                        <div class="w-full bg-orange-500 h-1.5 rounded-md"></div>
+                    </div>
+
+                    <h2 class="text-gray-400 font-medium">COREL DRAW</h2>
+                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                        <div class="w-11/12 bg-orange-500 h-1.5 rounded-md"></div>
+                    </div>
+
+                    <h2 class="text-gray-400 font-medium">PHOTOSHOP</h2>
+                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                        <div class="w-10/12 bg-orange-500 h-1.5 rounded-md"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <div id="project">
+        <div class="container mx-auto py-40 dark:bg-slate-200 bg-slate-50">
+            <!-- top -->
+            <div class="flex flex-col gap-3 items-center">
+
+                <h1 class="text-orange-600 font-bold">PROJECTS</h1>
+                <h1 class="text-3xl">What have we done?</h1>
+                <p class="w-1/2 text-center text-gray-400">
+                    Our servives span accross a variety of design outputs, ranging from Product design to Photo
+                    manipulation. Let's show you a few.
+                </p>
+            </div>
+
+            <!-- bottom -->
+            <div class="p-5 sm:p-0 flex flex-wrap m-11 justify-center">
+                <!-- Card -->
+                <div class="w-full md:w-2/12 shadow-xl rounded-lg p-5 my-3 flex flex-col mx-10">
+                    <img class="w-10" src="./images/icon.png" alt="">
+                    <h1 class="font-medium text-lg">UX / UI Design</h1>
+                    <p class="text-gray-400">I specialize in creating interactive websites for individuals and small
+                        businesses.</p>
+                    <a class="text-orange-600 font-semibold text-sm" href="">Read More</a>
+                </div>
+                <!-- Card -->
+                <div class="w-full md:w-2/12 shadow-xl rounded-lg p-5 my-3 flex flex-col mx-10">
+                    <img class="w-10" src="./images/icon.png" alt="">
+                    <h1 class="font-medium text-lg">Graphics Design</h1>
+                    <p class="text-gray-400">I specialize in creating interactive websites for individuals and small
+                        businesses.</p>
+                    <a class="text-orange-600 font-semibold text-sm" href="">Read More</a>
+                </div>
+                <!-- Card -->
+                <div class="w-full md:w-2/12 shadow-xl rounded-lg p-5 my-3 flex flex-col mx-10">
+                    <img class="w-10" src="./images/icon.png" alt="">
+                    <h1 class="font-medium text-lg">Product Design</h1>
+                    <p class="text-gray-400">I specialize in creating interactive websites for individuals and small
+                        businesses.</p>
+                    <a class="text-orange-600 font-semibold text-sm" href="">Read More</a>
+                </div>
+
+                <!-- Card -->
+                <div class="w-full md:w-2/12 shadow-xl rounded-lg p-5 my-3 flex flex-col mx-10">
+                    <img class="w-10" src="./images/icon.png" alt="">
+                    <h1 class="font-medium text-lg">Branding</h1>
+                    <p class="text-gray-400">I specialize in creating interactive websites for individuals and small
+                        businesses.</p>
+                    <a class="text-orange-600 font-semibold text-sm" href="">Read More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container mx-auto dark:bg-black">
+            <!-- top -->
+            <div class="flex flex-col gap-3 items-center">
+
+                <h1 class="text-orange-600 font-bold mt-20">CONTACT</h1>
+                <h1 class="text-3xl">Have Questions?</h1>
+                <p class="w-1/2 text-center text-gray-400">
+                    Do you have an idea? Let's discuss it, and let's see what we can do together.
+                </p>
+            </div>
+            <!-- bottom -->
+            <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+                <input class="p-2 w-full md:w-1/2 ring-1 ring-orange-500 hover:ring-orange-800 rounded-sm" type="text"
+                    placeholder="Your FullName">
+                <input class="p-2 w-full md:w-1/2 ring-1 ring-orange-500  hover:ring-orange-800 rounded-sm" type="email"
+                    placeholder="Your Email">
+                <textarea class="p-2 w-full md:w-1/2 ring-1 ring-orange-500  hover:ring-orange-800 rounded-sm" cols="30"
+                    rows="10" placeholder="Message..."></textarea>
+                <button
+                    class="w-1/2 bg-orange-500 hover:bg-orange-700 text-white font-medium px-3 py-2 rounded-md cursor-pointer">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="w-full bg-black text-white border-t-1">
+        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+
+            <div class="flex items-center gap-2">
+                <img class="size-16 hover:opacity-50" src="./images/SKY_Logo.png" alt="">
+                <span class="md:text-2xl font-bold text-orange-500 hover:text-orange-600 cursor-pointer">SKY
+                    DESIGNS</span>
+            </div>
+
+            <div>
+                <span class="hidden md:block font-medium text-orange-400 hover:text-orange-600">2024® Sky🧡Designs
+                    Productions.</span>
+            </div>
+
+            <div class="flex gap-2">
+                <a href="#contact"><img class="w-6 cursor-pointer hover:opacity-60" src="./images/facebook.png" alt=""></a>
+                <a href="#contact"><img class="w-6 cursor-pointer hover:opacity-60" src="./images/inst1.png" alt=""></a>
+                <a href="#contact"><img class="w-6 cursor-pointer hover:opacity-60" src="./images/x1.png" alt=""></a>
+                <a href="#contact"><img class="w-6 cursor-pointer hover:opacity-60" src="./images/linkedin.png" alt=""></a>
+            </div>
+
+        </section>
+    </footer>
+
+
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+</body>
+
+</html>
